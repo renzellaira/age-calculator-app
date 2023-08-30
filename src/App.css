@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope&family=Poppins:ital,wght@0,400;0,700;1,400;1,800&display=swap');
+body {
+  background-color: hsl(0, 0%, 86%);
+  font-family: 'Poppins', sans-serif;
+
+} 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
 }
 
 .App-logo {
