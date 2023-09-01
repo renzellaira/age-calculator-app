@@ -12,17 +12,18 @@ const InputField = ({ id, label, placeholder, helperText, handleChange, max, err
         if (inputText > max) {
             setError(true)
         } else {
-            setError(false)
+            if (id === 'day') {
+                setError(error)
+            } else {
+                setError(false)
+            }
         }
-        setError(error)
-    }, [inputText])
+    }, [inputText, error])
 
     const handleInput = (event) => {
         const newValue = event.target.value;
         setInputText(newValue);
     }
-
-
 
     return (
         <div className="inputField">
